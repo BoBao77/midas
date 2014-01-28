@@ -37,7 +37,6 @@ define([
         self.login(message);
       });
 	  
-	  this.options.cache = false;
     },
 
     render: function () {
