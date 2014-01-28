@@ -20,6 +20,7 @@ define([
     initialize: function (options) {
       var self = this;
       this.options = options;
+	  this.options.cache = false;
 
       this.listenTo(window.cache.userEvents, "user:login:success", function (userData) {
         self.doRender({ user: userData });
