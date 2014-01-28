@@ -25,7 +25,8 @@ define([
       if (id) {
 	      this.set({ id: id });
       }
-      this.fetch({
+      this.fetch({reset: true},{
+		
         success: function (model, response, options) {
           self.trigger("profile:fetch:success", model);
         },

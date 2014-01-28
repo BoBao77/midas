@@ -83,6 +83,7 @@ define([
       }
       this.listenToOnce(this.collection, 'browse:' + this.target + ":fetch", function () {
         self.collection.fetch({
+			reset: true;
           success: function (collection) {
             self.collection = collection;
             self.browseMainView.renderList(self.collection.toJSON());
